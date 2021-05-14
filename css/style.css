@@ -1,0 +1,237 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main-container{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.container{
+    margin: 15px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    text-align: center;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.sub-container{
+    /*padding: 10px;*/
+    background-color: rgb(227, 229, 226);
+    flex: 33%;
+    margin-right: 20px;
+    border-radius: 8px;
+    flex-flow: column nowrap;
+    overflow: hidden;
+   
+}
+.topic{
+    background-color: rgb(105, 245, 62);
+    padding: 5px;
+}
+.topic-text,
+.time-text,
+.score-text{
+    color: white;
+    font-size: 15px;
+    font-family:sans-serif;
+}
+.box{
+    height: 50px;
+    padding: 7px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.score-box,
+.topic-box{
+    color: rgb(102, 104, 105);
+    font-size: 20px;
+    font-family:sans-serif;
+    font-weight: bolder;
+    text-align: center;
+}
+.time-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+.num{
+    background-color: white;
+    padding: 6px;
+    font-size: 13px;
+    font-family:sans-serif;
+    margin-right: 10px;
+    
+}
+.box-text{
+    font-size: 12px;
+    font-weight:bolder;
+    font-family:sans-serif;
+}
+.time{
+    background-color: rgb(48, 141, 247);
+    padding: 5px;
+}
+.score{
+    padding: 5px;
+    background-color: rgb(245, 61, 116);
+}
+.score .fa{
+    margin-left: 5px;
+}
+.instruction{
+    margin-top: 30px;
+    margin-left: 5px;
+    padding: 5px;
+    font-family:sans-serif;
+    font-size: 30px;
+    color: black;
+    display: flex;
+
+}
+.instruction-text{
+    margin-left: 10px;
+}
+.icon{
+    color: rgb(48, 141, 247);
+    padding: 5px;
+
+}
+.number-container{
+    margin: 20px;
+    width: 400px;
+    /*background-color: brown;*/
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 7px;
+}
+.number-box{
+    flex-flow: column nowrap; 
+    overflow: hidden;
+    /*background-color: yellow;*/
+}
+.item{
+    display: flex;
+    margin: 10px;
+    width: 70px;
+    height: 70px;
+    background-color: rgb(48, 141, 247);
+    border-radius: 100%;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    font-family:sans-serif;
+}
+
+@media screen and (max-width: 1000px) {
+    .container{
+        flex-direction: column;
+        height: auto;
+        margin: 5px;
+    }
+    .sub-container{
+        width: 95%;
+        margin-bottom: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+   
+    
+}
+@media screen and (max-width: 750px) {
+    .instruction{
+        font-size: 28px;
+    }
+
+
+}
+@media screen and (max-width: 710px) {
+    .instruction{
+        font-size: 26px;
+    }
+
+
+}
+@media screen and (max-width: 610px) {
+    .instruction{
+        font-size: 24px;
+    }
+
+
+}
+@media screen and (max-width: 510px){
+    .instruction{
+        font-size: 22px;
+
+    }
+    .score-box,
+    .topic-box{
+        font-size: 15px;
+    }
+    .item{
+        width: 65px;
+        height: 65px;
+        margin: 5px;
+    }
+}
+@media screen and (max-width: 410px){
+    .instruction{
+        font-size: 20px;
+
+    }
+    .item{
+        width: 60px;
+        height: 60px;
+        margin: 5px;
+    }
+    .number-container{
+        width: 95%;
+    }
+    
+    
+}
+
+@media screen and (max-width: 375px){
+    .instruction{
+        font-size: 18px;
+
+    }
+    .item{
+        width: 45px;
+        height: 45px;
+        margin: 5px;
+        font-size: 14px;
+    }
+    .number-container{
+        width: 95%;
+    }
+    .num{
+        font-size: 14px;
+    }
+    
+}
+@media screen and (max-width: 305px) {
+    .num{
+        font-size: 14px;
+    }
+    .item{
+        width: 40px;
+        height: 40px;
+        margin: 5px;
+        font-size: 14px;
+    }
+    
+}
